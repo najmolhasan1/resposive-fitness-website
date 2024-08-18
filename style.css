@@ -704,7 +704,7 @@ select {
 @media (max-width: 576px) {
 .header_section{
     background-image: var(--header-gradient);
-    max-height: 800px;
+    max-height: 900px;
     max-width: 100%;
     padding: 0px 20px;
     /* border: 2px solid salmon; */
@@ -718,9 +718,9 @@ select {
     
 }
 .nav_bar{
-    height: 40px;
+    height: 60px;
     padding: 1rem;
-    margin-bottom: ;
+    margin-bottom:60px;
 }
 .nav_items{
     border: none;
@@ -755,26 +755,26 @@ select {
 } 
 
 #hero_img{
-    width: 65%;
-    margin-left: 70px;
+    width: 70%;
+    margin-left: 50px;
 }
 .hero_text, .hero_image{
     width: 100%;
     /* overflow: hidden; */
 }
 .hero_text h1{
-    font-size: 4.2rem;
+    font-size: 42px;
     font-weight: 900;
     color: #fff;
     line-height: 5rem;
 }
 .hero_text p{
-    font-size:1.4rem;
+    font-size:14px;
     color: var(--gray-text-color);
 }
 .button{
     display: flex;
-    gap: 2.5rem;
+    gap: 20px;
 }
 .button a{
 
@@ -786,7 +786,7 @@ select {
 .video_tutorial{
     height: 80px;
     width: 170px;
-    transform: translate(0vw, -28vh);
+    transform: translate(0px, -150px);
 
 }
 .red_circle{
@@ -806,7 +806,7 @@ select {
 .work_out{
     height: 80px;
     width: 170px;
-    transform: translate(52vw, -110vh);
+    transform: translate(185px, -450px);
 }
 .work_out h1{
     color: #fff;
@@ -874,7 +874,7 @@ select {
 }
 
 .running_section{
-    height: 150vh;
+    height: 600px;
     width: 100%;
     background-color: var(--body-color);
     color: #fff;
@@ -913,13 +913,14 @@ select {
 .running_info a{
     color: #fff;
     text-decoration: none;
-    padding: 1.5rem 13rem;
+    padding: 1.5rem 10rem;
     background-color: var(--primary-color);
     font-size: 1.2rem;
     font-weight: 700;
     border-radius: 4.2rem;
     display: inline-block;
     margin: 0xp auto;
+    text-align: center;
 }
 .running_img{
     height: 100px;
@@ -967,7 +968,32 @@ select {
 
 
 }
+.grid-item {
+    position: relative;
+    height: 110px;
+    overflow: hidden;
+}
 
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+}
 
 
 /*BMI Calculator section starts here*/
@@ -1121,8 +1147,8 @@ select {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-    padding: 2.5rem;
-    border-radius: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
     
 }
 .team_container i{
@@ -1201,21 +1227,20 @@ select {
     gap: 3rem;
 }
 .work_left h1{
-    font-size: 1.4rem;
+    font-size: 3rem;
     text-align: center;
+    font-weight: 900;
 }
 .work_left a{
     text-decoration: none;
     color: #fff;
-    padding: 1.3rem 2rem;
     background-color: var(--primary-color);
+    padding: 14px 24px;
+    color: black;
+    border-radius: 8px;
+    height: 50px;
     display: inline-block;
-    height: 4.5rem;
-    width: 25rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    border-radius: .5rem;
-    transition: ;
+    margin: 0px auto;
 }
 .work_left a:hover{
     background-color:#d10000;
@@ -1247,6 +1272,7 @@ select {
     background-size: cover;
     border-radius: 1.2rem;
     width: 100%;
+    height: 300px;
 }
 
 /* footer section starts here */
