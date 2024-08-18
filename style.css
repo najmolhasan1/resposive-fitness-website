@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Kaushan+Script&display=swap');
 
@@ -6,7 +6,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: "poppins", sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -182,34 +182,545 @@ color: #fff;
     font-size: 1.4rem;
 }
 
+/* Habit section starts from here */
+
+.habit_section{
+    height: 80vh;
+    width: 100%;
+    background-color: var(--body-color);
+    color: #fff;
+}
+.habit_upper_text{
+    text-align: center;
+    padding: 5rem;
+    line-height: 5rem;
+}
+.habit_upper_text h1{
+    font-size: 4.4rem;
+    font-weight: 900;
+    color: #fff;
+}
+.habit_upper_text p{
+    font-size: 1.4rem;
+    color: var(--gray-text-color);
+
+}
+
+.habit_card{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+.habit_card_info{
+    height: 20vw;
+    width: 15vw;
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 1.4rem;
+}
+.habit_card_info img{
+    border-radius: 50%;
+    width: 100%;
+    align-items: center;
+
+}
+.habit_card_info h1{
+    font-size: 1.6rem;
+}
+.habit_card_info p{
+    font-size: 1.2rem;
+    color: var(--gray-text-color);
+}
+.running_section{
+    height: 65vh;
+    width: 100%;
+    background-color: var(--body-color);
+    color: #fff;
+}
+.running_box{
+    height: 55vh;
+    width: 100%;
+    background-color: #202020;
+    border-radius: 1.5rem;
+}
+.inner_running_box{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 4rem;
+    align-items: center;
+    
+}
+.running_info{
+    width: 40%;
+}
+.running_info h1{
+    font-size: 3.6rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    
+}
+.running_info p{
+    font-size: 1.2rem;
+    color: var(--gray-text-color);
+    margin-bottom: 4rem;
+}
+.running_info a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 4.2rem;
+}
+.running_img{
+    height: 20vw;
+    width: 20vw;
+    border-radius: 4.2rem;
+
+}
+.running_img_box{
+    height: 20vw;
+    width: 20vw;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    border-radius: 1.5rem;
+}
+.running_img img{
+    width: 100%;
+    transform: scale(4) translate(-2.5vw, 2.3vw);
+
+}
+/* training section starts here  */
+.trainning_section{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--body-color);
+    color: #fff;
+}
+.training_container{
+    height: 60vh;
+    width: 100%;
+    background-color: #272727;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.trainning_section h1{
+    font-size: 4.4rem;
+    font-weight: 900;
+    line-height: 8rem;
+
+}
+.trainning_section p{
+    font-size: 1.4rem;
+    color: var(--gray-text-color);
+    margin-bottom: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.grid-item {
+    position: relative;
+    height: 27.5vh;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.grid-item:nth-child(1) .overlay {
+    background: rgba(0, 255, 255, 0.4);
+}
+
+.grid-item:nth-child(2) .overlay {
+    background: rgba(255, 0, 0, 0.4);
+}
+
+.grid-item:nth-child(3) .overlay {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.grid-item:nth-child(4) .overlay {
+    background: rgba(0, 255, 0, 0.4);
+}
+
+.grid-item:nth-child(5) .overlay {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.grid-item:nth-child(6) .overlay {
+    background: rgba(0, 0, 255, 0.4);
+}
+
+/*BMI Calculator section starts here*/
+.bmi_calculator{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--body-color);
+    color: #fff;
+}
+.bmi_calculator h1{
+    font-size: 4.4rem;
+    font-weight: 900;
+    line-height: 8rem;
+    padding-left: 190px;
+
+}
+.bmi_calculator p{
+    font-size: 1.4rem;
+    color: var(--gray-text-color);
+    margin-bottom: 2rem;
+    padding-left: 190px;
+}
+
+.bmi_container{
+    height: 70vh;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bmi_table{
+    width: 40%;
+    /* border: 1px solid red; */
+}
+.bmi_table h1{
+    padding: 0px;
+    font-size: 2.2rem;
+    line-height: 10rem;
+}
+table{
+   width: 90%;
+   height: 100%;
+}
+table tr{
+    height: 6vh;
+}
+table tr th{
+    text-align: left;
+    padding-left: 1.5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+table tr td {
+    padding-left: 1.5rem;
+    color: var(--gray-text-color);
+    font-size: 1.4rem;
+}
+.bmi_input{
+    width:50%;
+}
+
+.bmi_input h1{
+    padding: 0px;
+    font-size: 2.2rem;
+    line-height: 6rem;
+}
+.bmi_input p{
+    padding: 0px;
+    font-size: 1.2rem;
+    line-height: normal;
+}
 
 
+input[type=text]{
+    width: 47%;
+    padding: 1.3rem;
+    background-color: #424242;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    margin: 0rem 1rem 1rem 0rem;
+}
+select[name=sex]{
+    width: 47%;
+    padding: 1.3rem;
+    margin: 0rem 1rem 1rem 0rem;
+    background-color: #424242;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+}
+select[name=activity]{
+    width: 97%;
+    padding: 1.3rem;
+    background-color: #424242;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+}
+input::placeholder{
+    color: #c2c0c0;
+}
+select::placeholder{
+    color: #fff;
+}
+select {
+    color: #bebebe;
+}
 
+.bmi_input_info a{
+    /* border: 1px solid red; */
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+} 
 
+/* team section starts here */
+
+.team_section{
+    height: 110vh;
+    width: 100%;
+    background-color: var(--body-color);
+    color: #fff;
+
+}
+.team_section h1{
+    padding: 0px;
+    font-size: 4.2rem;
+    line-height: 4rem;
+    font-weight: 900;
+    text-align: center;
+}
+.team_section p{
+    padding: 0px;
+    font-size: 1.2rem;
+    line-height: 5rem;
+    text-align: center;
+}
+.team_container{
+    width: 100%;
+    height: 80vh;
+    background-color: #353535;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    
+}
+.team_container i{
+    padding: 0px;
+    font-size: 1.4rem;
+    /* font-weight: 700; */
+    font-style: normal;
+    line-height: none;
+    
+}
+.team_container h2{
+    padding: 0px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: none;
+    
+}
+
+.team_img{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-image: url(./images/trainer1.png);
+    background-size:cover;
+    
+}
+.team_img1{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-image: url(./images/trainer2.png);
+    background-size: cover;
+}
+.team_img2{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-image: url(./images/trainer3.png);
+    background-size: cover;
+}
+.team_img3{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-image: url(./images/trainer4.png);
+    background-size: cover;
+}
+.team_img4{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-image: url(./images/trainer5.png);
+    background-size: cover;
+}
+.team_img5{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-image: url(./images/trainer6.png);
+    background-size: cover;
+}
+.div_img_text{
+    position: relative;
+    bottom: -160px;
+    text-shadow: 1px 1px 20px rgb(41, 41, 41);
+}
+
+/* team section ends here */
+
+/* How does it works section */
+
+.how_works_section{
+    height: 80vh;
+    width: 100%;
+    background-color: var(--body-color);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.work_left{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.work_left h1{
+    font-size: 2.4rem;
+    text-align: center;
+}
+.work_left a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1.3rem 2rem;
+    background-color: var(--primary-color);
+    display: inline-block;
+    height: 4.5rem;
+    width: 25rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    transition: ;
+}
+.work_left a:hover{
+    background-color:#d10000;
+}
+
+.work_left, .work_right{
+    height: 60vh;
+    width: 45%;
+}
+.work_process{
+    display: flex;
+    align-items: center;
+}
+.work_icon i{
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+.work_text h2{
+    font-size: 1.8rem;
+}
+.work_text p{
+    font-size: 1.2rem;
+    color: var(--gray-text-color);
+}
+
+.work_right{
+    background-image: url(./images/gym_help.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.2rem;
+}
+
+/* footer section starts here */
+.footer_section{
+    height: 53vh;
+    width: 100%;
+    color: #fff;
+    background-color:#191919 ;
+}
+.footer_container{
+    height: 40vh;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.footer_container h1{
+    font-size: 2.2rem;
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_logo{
+    width: 30%;
+}
+.footer_logo h1{
+    font-size: 4.1rem;
+    font-style: italic;
+    color: var(--primary-color);
+}
+.footer_logo p{
+    color: var(--gray-text-color);
+    font-size: 1.2rem;
+}
+
+.get_started{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.get_started a{
+    text-decoration: none;
+    color: var(--gray-text-color);
+    font-size: 1.4rem;
+}
+.copy_right{
+    padding: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
 /* Media query for devices with a max-width of 576px */
 @media (max-width: 576px) {
 .header_section{
     background-image: var(--header-gradient);
-    max-height: 117.5vh;
+    max-height: 800px;
     max-width: 100%;
     padding: 0px 20px;
     /* border: 2px solid salmon; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .nav_logo{
-    font-size: 2.5rem;
+    font-size: 24px;
     font-weight: 900;
     font-style: italic;
     color: var(--primary-color);
     
 }
 .nav_bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    height: 10vh;
-    margin-bottom: 3vh;
+    height: 40px;
+    padding: 1rem;
+    margin-bottom: ;
 }
 .nav_items{
     border: none;
@@ -221,53 +732,41 @@ color: #fff;
     display: inline-block;
     color: #fff;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 18px;
     
 }
-.nav_items a{
-text-decoration: none;
-color: #fff;
-}
-#home_btn{
-    background-color:var(--primary-color);
-    padding: 1rem 2rem;
-    border-radius: 5rem;
-}
-
 .hero_section{
-    /* border: 2px solid salmon; */
     display:flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 4rem;
-    max-height: 100%;
+    gap: 20px;
+
     /* border: 1px solid red; */
 }
 .hero_text{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    justify-content: center;
+    gap: ;
 }
-/* .hero_image img{
+ .hero_image{
     width: 100%;
-} */
+    margin: 0px auto;
+    
+} 
 
 #hero_img{
-    width: 100%;
+    width: 65%;
+    margin-left: 70px;
 }
 .hero_text, .hero_image{
     width: 100%;
-    /* border: 1px solid rgb(226, 0, 0); */
-    max-height:100%;
-    /* gap:2rem */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .hero_text h1{
-    font-size: 5rem;
+    font-size: 4.2rem;
     font-weight: 900;
     color: #fff;
-    line-height: 6rem;
+    line-height: 5rem;
 }
 .hero_text p{
     font-size:1.4rem;
@@ -278,45 +777,27 @@ color: #fff;
     gap: 2.5rem;
 }
 .button a{
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    background-color: var(--primary-color);
-    padding: 1rem 2.5rem;
-    border-radius: 5rem;
+
 }
 #download_button{
-    border: .1rem solid #fff;
-    background: none;
+
 }
 
 .video_tutorial{
     height: 80px;
     width: 170px;
-        background-color: rgba(80, 79, 79, 0.54);
-    border-radius: 1.2rem;
-    /* opacity: 1; */
-    backdrop-filter: blur(20px);
-    border: 1px solid rgb(119, 119, 119);
-    padding: 1.5rem;
-    border-radius: 1.2rem;
-    transform: translate(0vw, -25vh);
+    transform: translate(0vw, -28vh);
 
 }
 .red_circle{
     background-color: var(--primary-color);
     border-radius: 50%;
-    height: 5vh;
-    width: 5vh;
+    height: 30px;
+    width: 30px;
 }
-.tutorial_text{
-    margin-left: 1rem;
-}
+
 .tutorial_text h1{
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 28px;
 }
 .tutorial_text p{
     color: var(--gray-text-color);
@@ -325,22 +806,506 @@ color: #fff;
 .work_out{
     height: 80px;
     width: 170px;
-    background-color: rgba(100, 100, 100, 0.54);
-    border-radius: 1.2rem;
-    /* opacity: 1; */
-    backdrop-filter: blur(20px);
-    border: 1px solid rgb(119, 119, 119);
-    padding: 1rem 2rem;
-    border-radius: 1.2rem;
-    transform: translate(48vw, -65vh);
+    transform: translate(52vw, -110vh);
 }
 .work_out h1{
     color: #fff;
     font-size: 3rem;
     font-weight: 900;
+    line-height: normal;
 }
 .work_out p{
     color: var(--gray-text-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: normal;
 }
+
+/* training section starts here */
+.habit_section{
+    height: 1600px;
+    width: 100%;
+    background-color: var(--body-color);
+    color: #fff;
+    padding: 10px 20px;
 }
+.habit_upper_text{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+.habit_upper_text h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: normal;
+}
+.habit_upper_text p{
+    font-size: 1.4rem;
+    color: var(--gray-text-color);
+    line-height: normal;
+
+}
+.habit_card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+    height: 800px;
+}
+.habit_card_info{
+    height: 800px;
+    width:100%;
+    text-align: center;
+    padding: 2.5rem;
+}
+.habit_card_info img{
+    border-radius: 50%;
+    width: 70%;
+    align-items: center;
+
+}
+.habit_card_info h1{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.habit_card_info p{
+    font-size: 1.2rem;
+    color: var(--gray-text-color);
+}
+
+.running_section{
+    height: 150vh;
+    width: 100%;
+    background-color: var(--body-color);
+    color: #fff;
+    padding: 1rem 2rem;
+}
+.running_box{
+    height: 100%;
+    width: 100%;
+    background-color: #202020;
+    border-radius: 2rem;
+}
+.inner_running_box{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+    
+}
+.running_info{
+    width: 100%;
+}
+.running_info h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    
+}
+.running_info p{
+    font-size: 1.2rem;
+    color: var(--gray-text-color);
+    margin-bottom: 4rem;
+}
+.running_info a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5rem 13rem;
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 4.2rem;
+    display: inline-block;
+    margin: 0xp auto;
+}
+.running_img{
+    height: 100px;
+    width: 100%;
+    border-radius: 3.2rem;
+    background-color: var(--gray-text-color);
+}
+.running_img_box{
+    height: 100%;
+    width: 100%;
+}
+.running_img img{
+    width: 100%;
+    transform: scale(2.5) translateX(-30px) translateY(25px);
+
+}
+
+.trainning_section{
+    height: 600px;
+    padding: 1rem 3rem;
+}
+.training_container{
+    height: 60vh;
+    width: 100%;
+    background-color: #272727;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.trainning_section h1{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: normal;
+
+}
+.trainning_section p{
+    font-size: 1.4rem;
+    color: var(--gray-text-color);
+    margin-bottom: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+}
+
+
+
+/*BMI Calculator section starts here*/
+.bmi_calculator{
+    height: 900px;
+    width: 100%;
+    background-color: var(--body-color);
+    color: #fff;
+    padding: 1rem 0rem;
+}
+.bmi_calculator h1{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: normal;
+    padding-left: 2rem;
+
+}
+.bmi_calculator p{
+    font-size: 1.4rem;
+    color: var(--gray-text-color);
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.bmi_container{
+    height: 800px;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+.bmi_table{
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+.bmi_table h1{
+    padding: 0px;
+    font-size: 2.2rem;
+    line-height: 7rem;
+}
+table{
+   width: 100%;
+   height: 300px;
+}
+table tr{
+    height: 6vh;
+}
+table tr th{
+    text-align: left;
+    padding-left: 1.5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+table tr td {
+    padding-left: 1.5rem;
+    color: var(--gray-text-color);
+    font-size: 1.4rem;
+}
+.bmi_input{
+    width:100%;
+    height: 400px;
+}
+
+.bmi_input h1{
+    padding: 0px;
+    font-size: 2.2rem;
+    line-height: 6rem;
+}
+.bmi_input p{
+    padding: 0px;
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+
+input[type=text]{
+    width: 46.5%;
+    padding: 1.3rem;
+    background-color: #424242;
+    border: none;
+    outline: none;
+    border-radius: .8rem;
+    margin: 0rem 1rem 1rem 0rem;
+}
+select[name=sex]{
+    width: 46.5%;
+    padding: 1.3rem;
+    margin: 0rem 1rem 1rem 0rem;
+    background-color: #424242;
+    border: none;
+    outline: none;
+    border-radius: .8rem;
+}
+select[name=activity]{
+    width: 97%;
+    padding: 1.3rem;
+    background-color: #424242;
+    border: none;
+    outline: none;
+    border-radius: .8rem;
+    margin-bottom: 3rem;
+}
+input::placeholder{
+    color: #c2c0c0;
+}
+select::placeholder{
+    color: #fff;
+}
+select {
+    color: #bebebe;
+}
+
+.bmi_input_info a{
+    /* border: 1px solid red; */
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+} 
+
+/* team section starts here */
+
+.team_section{
+    height: 1350px;
+    width: 100%;
+    background-color: var(--body-color);
+    color: #fff;
+    padding: 1rem 2rem;
+
+}
+.team_section h1{
+    padding: 0px;
+    font-size: 3rem;
+    line-height: normal;
+}
+.team_section p{
+    padding: 0px;
+    line-height: normal;
+    margin-bottom: 15px;
+
+}
+.team_container{
+    width: 100%;
+    height: 1200px;
+    background-color: #353535;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    
+}
+.team_container i{
+    padding: 0px;
+    font-size: 1.4rem;
+    /* font-weight: 700; */
+    font-style: normal;
+    line-height: none;
+    
+}
+.team_container h2{
+    padding: 0px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: none;
+    
+}
+.team_img{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-image: url(./images/trainer1.png);
+    background-size:cover;
+    height: 270px;
+    
+}
+.team_img1{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-image: url(./images/trainer2.png);
+    background-size: cover;
+    height: 270px;
+}
+.team_img2{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-image: url(./images/trainer3.png);
+    background-size: cover;
+        height: 270px;
+}
+.team_img3{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-image: url(./images/trainer4.png);
+    background-size: cover;
+        height: 270px;
+}
+.team_img4{
+    display: none;
+}
+.team_img5{
+    display: none;
+}
+.div_img_text{
+    position: relative;
+    bottom: -180px;
+    text-shadow: 1px 1px 20px rgb(41, 41, 41);
+}
+
+/* team section ends here */
+
+/* How does it works section */
+
+.how_works_section{
+    height: 800px;
+    width: 100%;
+    background-color: var(--body-color);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+.work_left{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.work_left h1{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.work_left a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1.3rem 2rem;
+    background-color: var(--primary-color);
+    display: inline-block;
+    height: 4.5rem;
+    width: 25rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    transition: ;
+}
+.work_left a:hover{
+    background-color:#d10000;
+}
+
+.work_left{
+    height: 400px;
+    width: 100%;
+}
+.work_process{
+    display: flex;
+    align-items: center;
+}
+.work_icon i{
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+.work_text h2{
+    font-size: 1.8rem;
+}
+.work_text p{
+    font-size: 1.2rem;
+    color: var(--gray-text-color);
+}
+
+.work_right{
+    background-image: url(./images/gym_help.jpg);
+    background-size: cover;
+    border-radius: 1.2rem;
+    width: 100%;
+}
+
+/* footer section starts here */
+.footer_section{
+    height: 700px;
+    width: 100%;
+    color: #fff;
+    background-color:#191919 ;
+    padding:1rem 2rem;
+}
+.footer_container{
+    height: 600px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding: 0px;
+}
+.footer_container h1{
+    font-size: 2.2rem;
+}
+.footer_container{
+    display: flex;
+     justify-content: space-evenly;
+     align-items: start;
+    flex-direction: column;
+}
+.footer_logo{
+    width: 100%;
+}
+.footer_logo h1{
+    font-size: 4.1rem;
+    font-style: italic;
+    color: var(--primary-color);
+    padding: 0px;
+    width: 100%;
+}
+.footer_logo p{
+    color: var(--gray-text-color);
+    font-size: 1.2rem;
+    padding: 0px;
+    width: 100%;
+}
+
+.get_started{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.get_started a{
+    text-decoration: none;
+    color: var(--gray-text-color);
+    font-size: 1.4rem;
+}
+.copy_right{
+    padding: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+}
+
+
